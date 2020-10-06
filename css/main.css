@@ -1,0 +1,57 @@
+main{
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-areas: "leftas" "rightas";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+    .left{
+        grid-area: leftas;
+        background-color: blue;
+
+    }
+        .drawers{
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+
+        }
+    .right{
+        /* display: grid; */
+        grid-area: rightas;
+        width: 100%;
+        background-color: red;
+    }
+
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+
+        .bottom{
+
+        }
+            .mishele{
+                width: 32px;
+                object-position: center;
+                object-fit: contain;
+            }
+
+            
+        .name-date{}
+
+            .name{
+
+            }
+            .date{
+
+            }
+        .share{
+
+        }
+        
+
