@@ -13,9 +13,7 @@ main{
     left:50%;
     transform: translate(-50%,-50%);
 }
-    .leftas{
-     
-    }
+
         .drawers{
             width: 100%; 
             height: 300px;
@@ -29,8 +27,7 @@ main{
         padding-left: 15px;
         padding-right: 15px;
         grid-template-columns: 100%;
-        grid-template-rows: 130px,120px,160px;
-        /* border: 1px solid red; */
+        grid-template-rows: 100px,100px,100px;
         
     }
         h1{
@@ -38,7 +35,6 @@ main{
             font-weight: 700;
             font-size: 28px;
         }
-            
         
         p{
             font-size: 16px;
@@ -48,10 +44,8 @@ main{
         .share-icon-outside{
             float: right;
             padding: 10px;
-            /* margin-right: 115px; */
             background-color:hsl(180deg 7% 95%);
             border-radius: 50%;
-            /* background-color: red; */
             cursor: pointer;
         }
 
@@ -79,8 +73,6 @@ main{
                 border-radius: 45px;
             }
 
-            .name-date{}
-            
             .name{
                 display: inline-block;
                 width: 100%;            
@@ -91,17 +83,13 @@ main{
             .date{
                 color: hsl(212, 23%, 69%);
             }
-            .share{
-                /* display: none; */
 
-            }
 
             .show {
+                display: flex;
                 background-color: #444F65;
                 justify-content: center;
                 align-items: center;
-                display: flex;
-                /* padding: 30px 20px; */
                 height: 50px;
                 border-radius: 13px;
                 margin-top: -83px;
@@ -114,7 +102,7 @@ main{
             .show:after{
                 content: '';
                 position: relative;
-                left: -36%;
+                left: -39%;
                 bottom: -44px;
                 border: 20px solid transparent;
                 border-top-color:#444F65;
@@ -128,7 +116,6 @@ main{
                     display: flex;
                     list-style-type: none;
                     margin-left: 15px;
-                    /* background-color: tomato; */
                 }
                 li{
                     padding: 5px 5px;
@@ -144,12 +131,6 @@ main{
                     opacity: 0.4;
                 }
 
-                /* .shareiconinside{
-                    /* display: none; */
-                    /* opacity: 1; */
-                    /* border: 20px solid transparent; */
-                    /* margin-left: 10px; */
-                /* }  */
                 .share-icon-inside{
                     display: none;
                 }
@@ -157,10 +138,9 @@ main{
 @media(max-width:700px){
     main{
         display: grid;
-        grid-template-columns: 375px;
+        grid-template-columns: 350px;
         padding-left: 10px;
         padding-right: 10px;
-
     }
 
     .drawers{
@@ -171,71 +151,51 @@ main{
      
     }
     h1{
-        display: block;
-        height: 130px;
+        height: 90px;
         padding-top: 20px;
        font-weight: 700;
         font-size: 23px;
     }
 
     p{
-        display: block;
-        height: 110px;
+        height: 60px;
         font-size: 16px;
-        /* color:hsl(214, 17%, 51%); */
     }
 
     .footer{
         display: grid;
         grid-template-columns: 60px 200px 40px 50px;
-        }
-
-        .p-share{
-
-
+        height: 50px;
         }
 
         .show {
             background-color: #444F65;
             justify-content: left;
-            align-items: center;
-            /* display: inline-block; */
-            /* padding: 30px 20px; */
-            height: 50px;
+            height: 49px;
             border-radius: 13px;
             margin-top: 100px;
-            margin-left: 0px;
         }
 
     .show {
-        
         margin-top: 0px;
         margin-left: -300px;
-        margin-right: -0px;
     }
     .hide{
         display: none;
-        
     }
 
     .show:after{
         border: 0px solid transparent;
     }
-    
-    .share-icon{
-        background-color:hsl(212, 23%, 69%);
-    }
-    .mishele{
-        /* display: none; */
-    }
 
     .share-icon-outside{
-
+        margin-top: 8px;
+        margin-left: 3px;
     }
 
     .share-icon-inside{
         display: flex;
-        margin-left: 76px;
+        margin-left: 36px;
         padding: 10px;
         background-color:hsl(212, 23%, 69%);
         border-radius: 50%;
